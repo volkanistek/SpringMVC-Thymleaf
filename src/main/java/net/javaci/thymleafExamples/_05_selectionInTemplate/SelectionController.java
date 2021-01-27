@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class SelectionController {
 
-	@GetMapping
-	public String renderSlectionPage(Model model) {
+	@GetMapping("selection")
+	public String renderSelectionPage(Model model) {
 		model.addAttribute("basariliMi", Math.random() > 0.5);
 		model.addAttribute("cinsiyet", Math.random() > 0.5 ? "K" : "E");
 		
